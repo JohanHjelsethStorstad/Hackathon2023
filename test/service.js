@@ -1,5 +1,5 @@
 import createHiveWS from '@norniras/hive-agent/ws'
-import { token, rootDomain } from './config.js'
+import { token, rootDomain } from '../utils/config.js'
 
 // Create a client connection.
 const example = createHiveWS({
