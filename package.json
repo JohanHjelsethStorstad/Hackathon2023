@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/JohanHjelsethStorstad/Hackathon2023#readme",
   "dependencies": {
+    "@norniras/hive-agent": "^2.0.4",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.0.3"
   }
 }
