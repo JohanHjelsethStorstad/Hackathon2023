@@ -8,7 +8,6 @@ function App() {
         <Header />
       </div>
       <div className={styles.content}>
-        
       </div>
     </div>
   )
