@@ -3,15 +3,19 @@ import { token } from './config.js'
 import { useState } from 'react'
 
 // Create a client connection.
-function useConnection(service, objectId='1', domain='group7.cioty.com') {
-    const example = createHiveWS({
+function useConnection(service, objectId='1', subdomain='group7') {
+    const chn = createHiveWS({
         type: 'channel',
         token,
-        rootDomain: `${domain}.cioty.com`,
-        ghostAddress: `${service}/${objectId}`,
+        rootDomain: `cioty.com`,
+        ghostAddress: `group7/${service}/${objectId}`,
     })
+    console.log(chn)
     const [state, setState] = useState(null)  
-    example.open(data => setState(JSON.parse(data)))
+    chn.open(data => {
+        //setState(JSON.parse(data))
+        console.log(data) 
+    })
     
     return state
 }

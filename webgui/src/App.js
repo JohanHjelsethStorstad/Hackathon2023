@@ -1,5 +1,6 @@
 import styles from './App.module.scss';
 import Header from './components/Header';
+import DataModule from './components/DataModule';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Header />
       </div>
       <div className={styles.content}>
+        <DataModule service='temperaturesensor'/>
       </div>
     </div>
   )
