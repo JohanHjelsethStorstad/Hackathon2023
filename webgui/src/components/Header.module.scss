@@ -1,0 +1,9 @@
+@use "../styles/common.scss";
+
+.wrapper {
+    background-color: common.$purple;
+    min-height: 10vh;
+    padding: common.$space;
+    font-size: common.$l;
+    @include common.center();
+}

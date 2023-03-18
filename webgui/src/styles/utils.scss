@@ -1,0 +1,45 @@
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin linkButton() {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+@mixin makeBackground($x) {
+    background: url($x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin blueButton() {
+    background-color: $blue;
+    padding: $space;
+    margin-top: $space;
+    color: $white;
+    border: none;
+    min-width: 50px;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($blue, 10%);
+    }
+}
+
+@mixin button($color, $text) {
+    @include blueButton();
+    color: $text;
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
