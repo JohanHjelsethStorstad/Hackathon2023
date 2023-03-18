@@ -1,2 +1,2 @@
 temperature = 'temperaturesensor'
-humidity = ''
+moisture = 'hygrometer'
