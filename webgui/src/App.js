@@ -9,7 +9,7 @@ function App() {
         <Header />
       </div>
       <div className={styles.content}>
-        <DataModule service='temperaturesensor'/>
+        <DataModule service='temperaturesensor' name='Temperature'/>
       </div>
     </div>
   )

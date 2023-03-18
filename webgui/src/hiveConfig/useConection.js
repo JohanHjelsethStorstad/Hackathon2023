@@ -13,8 +13,7 @@ function useConnection(service, objectId='1', subdomain='group7') {
     console.log(chn)
     const [state, setState] = useState(null)  
     chn.open(data => {
-        //setState(JSON.parse(data))
-        console.log(data) 
+        setState(JSON.parse(data).RTW.TEMPC)
     })
     
     return state
